@@ -1,0 +1,91 @@
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+
+    from{background-color: red;}
+    to{background-color: green;}
+    
+}
+
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example1;
+    animation-duration: 5s;
+}
+
+@keyframes example1{
+    0% {background-color: red;}
+    25% {background-color: green;}
+    50% {background-color: yellow;}
+    75% {background-color: orange;}
+    100% {background-color: deeppink;}
+}
+
+.three{
+    width: 100px;
+    height: 100px;
+    left:0px;
+    top:75px;
+    background-color:#002147;
+    animation-name: movement;
+    animation-duration: 6s;
+    position: relative;
+    animation-delay: 2s;
+}
+
+@keyframes movement {
+    0% {left:0px;top:75px}
+    25% {left:200px;top:75px}
+    50% {left:200px;top:175px}
+    75% {left:0px;top:175px}
+    0% {left:0px;top:75px}
+   
+   
+}
+
+.x1{
+    width: 100px;
+    height: 50px;
+    background-color:green;
+    animation-name: mymove;
+    animation-duration: 5s;
+  
+    position: relative;
+}
+
+@keyframes mymove {
+    
+    from{left:0px}
+    to{left:200px}
+}
+
+#div1{
+  animation-timing-function: linear;
+}
+
+#div2{
+    animation-timing-function: ease;
+}
+
+#div3{
+    animation-timing-function: ease-in;
+}
+
+#div4{
+    animation-timing-function: ease-out;
+}
+
+#div5{
+    animation-timing-function: ease-in-out;
+}
+
+
+

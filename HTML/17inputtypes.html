@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+    <form action="3paragraphs.html">
+
+        Quantity:
+         <input type="number" min="0" max="100" step="10" value="45">
+        <br>
+        <br>
+        Select Volume
+        <input type="range" name="vol" min="0" max="50" value="30" 
+        onchange="updateText(this.value)">
+        
+        <label  id="volLabel1"></label>
+
+        <br><br>
+        Select Time: <input type="time">
+
+        <br><br>
+        Select Month: <input type="month">
+
+        <br><br>
+        Select Week: <input type="week">
+
+        <br><br>
+        Enter URL: <input type="url">
+
+
+        
+        <br>
+        <input type="submit" value="Add">
+    </form>
+
+    <script>
+        function updateText(volumeLevel){
+            console.log(volumeLevel)
+           
+            let lab1=document.getElementById("volLabel1");
+            lab1.textContent=volumeLevel
+           
+        }
+    </script>
+
+</body>
+
+</html>
